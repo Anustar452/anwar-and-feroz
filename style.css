@@ -1,19 +1,22 @@
 body{
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
 }
 #main{
 padding: 0px;
 margin: 10px auto;
-align-items: center;
 width: 100%;
+max-width: 100%;
 }
 
 .hero{
     background-color: rgb(218, 218, 218);
     padding:30px;
     width: 100%;
-    height: 120px;
+    height: auto;
     margin-bottom: 40px;
 
   
@@ -31,6 +34,7 @@ text-transform: capitalize;
 text-align: center;
 padding: 6px 0px;
 margin: 5px auto;
+max-width: 95%;
 
 }
 
@@ -51,8 +55,70 @@ margin: 5px auto;
 #img-caption{
     max-width: 65%;
     font-size: 14px;
+    line-height: 1rem;
     color: rgb(54, 54, 54);
     text-align: center;
     margin: 8px auto 20px;
     
 }
+#tribute-info{
+    background-color: rgb(218, 218, 218);
+    padding:50px 15px;
+    width: 100%;
+    margin: 10px auto;
+}
+#tribute-info p{
+    font-size:18px;
+    max-width: 75%;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 1.8rem;
+
+}
+
+#tribute-link{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    
+}
+#tribute-link a{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    text-decoration: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    #image{
+        max-width: 95%;
+        width: 90%;
+        height: 400px;
+
+    }
+    #img-div{
+        width: 100%;
+
+        }
+        #tribute-info p{
+            max-width: 85%;
+            text-align: justify;
+        }
+        #img-caption{
+            max-width: 85%;            
+        }
+        #tribute-link{
+            width: 90%;
+            margin: 20px auto;
+            
+        }
+  }
